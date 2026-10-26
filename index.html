@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repostería MyG | Tortas, Pasteles y Postres Artesanales</title>
+    
+    <!-- Meta SEO y Redes Sociales -->
+    <meta name="description" content="En Repostería MyG endulzamos tus momentos especiales con deliciosas tortas personalizadas, pasteles, cupcakes, galletas y postres artesanales en Pailón, Bolivia. ¡Haz tu pedido por WhatsApp!">
+    <meta name="keywords" content="Repostería MyG, tortas en Pailón, pasteles artesanales, postres Bolivia, cupcakes personalizados, pedidos por WhatsApp, repostería dulce">
+    <meta name="author" content="Repostería MyG">
+    <meta property="og:title" content="Repostería MyG | Endulzamos tus momentos especiales">
+    <meta property="og:description" content="Tortas, pasteles, cupcakes y postres artesanales hechos con amor e ingredientes de primera calidad. ¡Haz tu pedido fácilmente por WhatsApp!">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#6c3b2f">
+
+    <!-- Enlace a estilos CSS externos -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon SVG con icono dulce -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%236c3b2f'><path d='M12 2C8.69 2 6 4.69 6 8c0 .34.03.67.08 1H4a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-2.08c.05-.33.08-.66.08-1 0-3.31-2.69-6-6-6zm0 2c2.21 0 4 1.79 4 4 0 .34-.04.67-.11 1H8.11C8.04 8.67 8 8.34 8 8c0-2.21 1.79-4 4-4zm-8 9v7a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-7H4z'/></svg>">
+</head>
+<body>
+
+    <!-- ==========================================
+         BARRA SUPERIOR INFORMATIVA
+         ========================================== -->
+    <div class="top-bar">
+        <span class="top-bar-item">
+            🧁 <strong>¡Pedidos especiales para cumpleaños y eventos con anticipación!</strong>
+        </span>
+        <span class="top-bar-divider">|</span>
+        <span class="top-bar-item">
+            📍 Pailón, Barrio María Belén, Bolivia
+        </span>
+        <span class="top-bar-divider">|</span>
+        <span class="top-bar-item">
+            💬 WhatsApp: <strong>69120470</strong>
+        </span>
+    </div>
+
+    <!-- ==========================================
+         CABECERA / NAVEGACIÓN
+         ========================================== -->
+    <header>
+        <nav class="navbar" aria-label="Navegación principal">
+            <!-- Logotipo Repostería MyG -->
+            <a href="#inicio" class="logo" id="brandLogo" aria-label="Repostería MyG - Ir al inicio">
+                <div class="logo-icon-wrap" aria-hidden="true">
+                    <!-- SVG Pastelito / Cupcake -->
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8"/>
+                        <path d="M4 16s.5-1 2-1 2.5 2 4 2 2.5-2 4-2 2.5 2 4 2 2-1 2-1"/>
+                        <path d="M2 21h20"/>
+                        <path d="M7 8v2"/>
+                        <path d="M12 5v5"/>
+                        <path d="M17 8v2"/>
+                        <circle cx="12" cy="4" r="1.5" fill="currentColor"/>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-brand">Repostería <span>MyG</span></span>
+                    <span class="logo-tagline">Sabores Hechos con Amor</span>
+                </div>
+            </a>
+
+            <!-- Botón Hamburguesa Móvil -->
+            <button class="menu-btn" id="menuBtn" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="navMenu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+
+            <!-- Menú de Navegación Exacto: Inicio, Productos, Sobre nosotros, Galería, Contacto -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio" class="nav-link active" id="navInicio">Inicio</a></li>
+                <li><a href="#productos" class="nav-link" id="navProductos">Productos</a></li>
+                <li><a href="#nosotros" class="nav-link" id="navNosotros">Sobre nosotros</a></li>
+                <li><a href="#galeria" class="nav-link" id="navGaleria">Galería</a></li>
+                <li><a href="#contacto" class="nav-link" id="navContacto">Contacto</a></li>
+                
+                <!-- Acciones visibles en el menú desplegable móvil -->
+                <li class="nav-mobile-cta">
+                    <a href="https://wa.me/59169120470?text=%C2%A1Hola!%20Me%20interesa%20conocer%20los%20productos%20de%20Reposter%C3%ADa%20MyG.%20%C2%BFPodr%C3%ADan%20enviarme%20informaci%C3%B3n%20sobre%20sus%20tortas%2C%20postres%20y%20precios%3F" 
+                       class="btn btn-whatsapp btn-sm" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       id="mobileNavWhatsappBtn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.78 14.16c-.24.68-1.39 1.3-1.92 1.38-.49.07-1.12.1-3.23-.77-2.7-1.12-4.44-3.86-4.57-4.04-.13-.18-1.09-1.45-1.09-2.77 0-1.32.69-1.96.93-2.23.25-.26.54-.33.72-.33.18 0 .36 0 .52.01.17.01.39-.06.61.47.24.57.81 1.98.88 2.13.07.14.12.31.02.5-.09.2-.14.31-.29.47-.14.16-.31.36-.44.49-.14.14-.29.3-.12.59.16.29.73 1.2 1.57 1.95 1.08.96 1.99 1.26 2.27 1.4.29.14.45.12.62-.07.17-.2.72-.84.91-1.13.2-.29.39-.24.66-.14.27.1 1.72.81 2.02.96.29.14.49.22.56.34.07.12.07.72-.17 1.4z"/>
+                        </svg>
+                        Pedir por WhatsApp
+                    </a>
+                    <a href="https://www.tiktok.com/@awm283" 
+                       class="btn btn-tiktok btn-sm tiktok-link" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       id="mobileNavTiktokBtn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.35 0 .68.06.98.17V8.97a6.29 6.29 0 0 0-.98-.08A6.34 6.34 0 0 0 3 15.23a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V9.08a8.16 8.16 0 0 0 4.91 1.63v-3.52c-.34 0-.68-.17-1-.5z"/>
+                        </svg>
+                        Síguenos en TikTok
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Acciones rápidas en Navbar para escritorio -->
+            <div class="nav-actions">
+                <a href="https://www.tiktok.com/@awm283" 
+                   class="btn btn-tiktok btn-sm tiktok-link" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   title="Visitar perfil de TikTok @awm283"
+                   id="headerTiktokBtn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.35 0 .68.06.98.17V8.97a6.29 6.29 0 0 0-.98-.08A6.34 6.34 0 0 0 3 15.23a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V9.08a8.16 8.16 0 0 0 4.91 1.63v-3.52c-.34 0-.68-.17-1-.5z"/>
+                    </svg>
+                    <span>TikTok</span>
+                </a>
+
+                <a href="https://wa.me/59169120470?text=%C2%A1Hola!%20Me%20interesa%20conocer%20los%20productos%20de%20Reposter%C3%ADa%20MyG.%20%C2%BFPodr%C3%ADan%20enviarme%20informaci%C3%B3n%20sobre%20sus%20tortas%2C%20postres%20y%20precios%3F" 
+                   class="btn btn-whatsapp btn-sm" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   id="headerWhatsappBtn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.78 14.16c-.24.68-1.39 1.3-1.92 1.38-.49.07-1.12.1-3.23-.77-2.7-1.12-4.44-3.86-4.57-4.04-.13-.18-1.09-1.45-1.09-2.77 0-1.32.69-1.96.93-2.23.25-.26.54-.33.72-.33.18 0 .36 0 .52.01.17.01.39-.06.61.47.24.57.81 1.98.88 2.13.07.14.12.31.02.5-.09.2-.14.31-.29.47-.14.16-.31.36-.44.49-.14.14-.29.3-.12.59.16.29.73 1.2 1.57 1.95 1.08.96 1.99 1.26 2.27 1.4.29.14.45.12.62-.07.17-.2.72-.84.91-1.13.2-.29.39-.24.66-.14.27.1 1.72.81 2.02.96.29.14.49.22.56.34.07.12.07.72-.17 1.4z"/>
+                    </svg>
+                    <span>Pedir por WhatsApp</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ==========================================
+             SECCIÓN 2: PÁGINA DE INICIO / HERO
+             ========================================== -->
+        <section class="hero" id="inicio">
+            <div class="hero-container">
+                <div class="hero-text-content">
+                    <div class="hero-badge">
+                        <span class="hero-badge-dot"></span>
+                        <span>ALTA REPOSTERÍA ARTESANAL</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Endulzamos tus <span>momentos especiales</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        En <strong>Repostería MyG</strong> creamos tortas personalizadas, pasteles suaves, 
+                        cupcakes decorados y exquisitos postres con ingredientes de la mejor calidad. 
+                        Cada receta está preparada con pasión, dedicación y el auténtico sabor casero.
+                    </p>
+
+                    <!-- Botones de Acción Destacados: WhatsApp y TikTok -->
+                    <div class="hero-buttons">
+                        <!-- Botón destacado "Haz tu pedido" a WhatsApp -->
+                        <a href="https://wa.me/59169120470?text=%C2%A1Hola!%20Me%20interesa%20conocer%20los%20productos%20de%20Reposter%C3%ADa%20MyG.%20%C2%BFPodr%C3%ADan%20enviarme%20informaci%C3%B3n%20sobre%20sus%20tortas%2C%20postres%20y%20precios%3F" 
+                           class="btn btn-whatsapp" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           id="heroOrderWhatsappBtn">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.78 14.16c-.24.68-1.39 1.3-1.92 1.38-.49.07-1.12.1-3.23-.77-2.7-1.12-4.44-3.86-4.57-4.04-.13-.18-1.09-1.45-1.09-2.77 0-1.32.69-1.96.93-2.23.25-.26.54-.33.72-.33.18 0 .36 0 .52.01.17.01.39-.06.61.47.24.57.81 1.98.88 2.13.07.14.12.31.02.5-.09.2-.14.31-.29.47-.14.16-.31.36-.44.49-.14.14-.29.3-.12.59.16.29.73 1.2 1.57 1.95 1.08.96 1.99 1.26 2.27 1.4.29.14.45.12.62-.07.17-.2.72-.84.91-1.13.2-.29.39-.24.66-.14.27.1 1.72.81 2.02.96.29.14.49.22.56.34.07.12.07.72-.17 1.4z"/>
+                            </svg>
+                            Haz tu pedido
+                        </a>
+
+                        <!-- Botón "Síguenos en TikTok" -->
+                        <a href="https://www.tiktok.com/@awm283" 
+                           class="btn btn-tiktok tiktok-link" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           id="heroTiktokBtn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.35 0 .68.06.98.17V8.97a6.29 6.29 0 0 0-.98-.08A6.34 6.34 0 0 0 3 15.23a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V9.08a8.16 8.16 0 0 0 4.91 1.63v-3.52c-.34 0-.68-.17-1-.5z"/>
+                            </svg>
+                            Síguenos en TikTok
+                        </a>
+
+                        <!-- Botón secundario para explorar menú -->
+                        <a href="#productos" class="btn btn-secondary" id="heroExploreBtn">
+                            Ver catálogo
+                        </a>
+                    </div>
+
+                    <!-- Resumen de Confianza y Calidad -->
+                    <div class="hero-highlights">
+                        <div class="hero-highlight-item">
+                            <div class="hero-highlight-icon">🎂</div>
+                            <div class="hero-highlight-info">
+                                <strong>100% Artesanal</strong>
+                                <span>Recetas frescas y cuidadas</span>
+                            </div>
+                        </div>
+                        <div class="hero-highlight-item">
+                            <div class="hero-highlight-icon">✨</div>
+                            <div class="hero-highlight-info">
+                                <strong>Diseños a Medida</strong>
+                                <span>Tortas y temáticas únicas</span>
+                            </div>
+                        </div>
+                        <div class="hero-highlight-item">
+                            <div class="hero-highlight-icon">📍</div>
+                            <div class="hero-highlight-info">
+                                <strong>Pailón, Bolivia</strong>
+                                <span>Barrio María Belén</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imagen Hero con marco decorativo y tarjeta flotante -->
+                <div class="hero-visual">
+                    <div class="hero-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1000&q=85" 
+                             alt="Torta gourmet decorada con chocolate y frutos rojos de Repostería MyG" 
+                             class="hero-main-img" 
+                             loading="eager">
+                        
+                        <div class="hero-floating-card">
+                            <div class="hero-floating-icon">🍰</div>
+                            <div>
+                                <h4>Hecho con dedicación</h4>
+                                <p>Sabor único en cada celebración</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SECCIÓN 5: CATÁLOGO DE PRODUCTOS
+             ========================================== -->
+        <section class="section section-alt" id="productos">
+            <div class="section-header">
+                <span class="section-subtitle">NUESTRAS DELICIAS</span>
+                <h2 class="section-title">Catálogo de Productos</h2>
+                <p class="section-desc">
+                    Elaboramos cada producto de manera artesanal, cuidando cada detalle para ofrecerte 
+                    la mejor experiencia en tus momentos más dulces.
+                </p>
+            </div>
+
+            <!-- Filtros por Categorías solicitadas -->
+            <div class="catalog-filters-wrap">
+                <div class="filters-list" role="tablist" aria-label="Categorías de productos">
+                    <button class="filter-btn active" data-category="todos" role="tab" aria-selected="true" id="filterTodos">Todos</button>
+                    <button class="filter-btn" data-category="tortas" role="tab" aria-selected="false" id="filterTortas">Tortas</button>
+                    <button class="filter-btn" data-category="pasteles" role="tab" aria-selected="false" id="filterPasteles">Pasteles</button>
+                    <button class="filter-btn" data-category="cupcakes" role="tab" aria-selected="false" id="filterCupcakes">Cupcakes</button>
+                    <button class="filter-btn" data-category="galletas" role="tab" aria-selected="false" id="filterGalletas">Galletas</button>
+                    <button class="filter-btn" data-category="postres" role="tab" aria-selected="false" id="filterPostres">Postres</button>
+                    <button class="filter-btn" data-category="personalizados" role="tab" aria-selected="false" id="filterPersonalizados">Pedidos personalizados</button>
+                    <button class="filter-btn" data-category="salados" role="tab" aria-selected="false" id="filterSalados">Salados</button>
+                </div>
+            </div>
+
+            <!-- Grilla de Tarjetas de Productos -->
+            <div class="products-grid" id="productsGrid">
+
+                <!-- 1. Torta de Frutilla y Crema -->
+                <article class="product-card" data-category="tortas">
+                    <div class="product-img-container">
+                        <span class="product-badge">TORTAS</span>
+                        <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=700&q=80" 
+                             alt="Torta de frutilla con crema suave artesanal" 
+                             class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Torta de Frutilla & Crema</h3>
+                        <p class="product-desc">Bizcocho esponjoso relleno de crema chantilly suave y frutillas frescas de temporada.</p>
+                        <div class="product-footer">
+                            <div class="product-price-box">
+                                <span class="product-price-label">Precio</span>
+                                <span class="product-price">Bs. --</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary btn-sm btn-open-order-modal" 
+                                        data-product="Torta de Frutilla & Crema" 
+                                        data-price="Bs. --"
+                                        aria-label="Hacer pedido de Torta de Frutilla">
+                                    Pedir
+                                </button>
+                                <button class="btn btn-whatsapp-outline btn-sm btn-inquire-whatsapp" 
+                                        data-product="Torta de Frutilla & Crema"
+                                        aria-label="Consultar por WhatsApp Torta de Frutilla">
+                                    Consultar por WhatsApp
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 2. Torta Selva Negra -->
+                <article class="product-card" data-category="tortas">
+                    <div class="product-img-container">
+                        <span class="product-badge">TORTAS</span>
+                        <img src="https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?auto=format&fit=crop&w=700&q=80" 
+                             alt="Torta Selva Negra con chocolate y cerezas" 
+                             class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Torta Selva Negra</h3>
+                        <p class="product-desc">Capas de bizcochuelo de chocolate húmedo con crema batida, virutas de chocolate y cerezas.</p>
+                        <div class="product-footer">
+                            <div class="product-price-box">
+                                <span class="product-price-label">Precio</span>
+                                <span class="product-price">Bs. --</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary btn-sm btn-open-order-modal" 
+                                        data-product="Torta Selva Negra" 
+                                        data-price="Bs. --">
+                                    Pedir
+                                </button>
+                                <button class="btn btn-whatsapp-outline btn-sm btn-inquire-whatsapp" 
+                                        data-product="Torta Selva Negra">
+                                    Consultar por WhatsApp
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 3. Pan de Limón (Producto Original Conservado) -->
+                <article class="product-card" data-category="pasteles">
+                    <div class="product-img-container">
+                        <span class="product-badge">PASTELES</span>
+                        <img src="https://images.unsplash.com/photo-1586444248902-2f64eddc13df?auto=format&fit=crop&w=700&q=80" 
+                             alt="Pan de limón con glaseado cítrico artesanal" 
+                             class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Pan de limón</h3>
+                        <p class="product-desc">Delicioso pan suave con auténtico sabor a limón y glaseado artesanal dulce.</p>
+                        <div class="product-footer">
+                            <div class="product-price-box">
+                                <span class="product-price-label">Precio</span>
+                                <span class="product-price">Bs. 10</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary btn-sm btn-open-order-modal" 
+                                        data-product="Pan de limón" 
+                                        data-price="Bs. 10">
+                                    Pedir
+                                </button>
+                                <button class="btn btn-whatsapp-outline btn-sm btn-inquire-whatsapp" 
+                                        data-product="Pan de limón">
+                                    Consultar por WhatsApp
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 4. Queques (Producto Original Conservado) -->
+                <article class="product-card" data-category="pasteles">
+                    <div class="product-img-container">
+                        <span class="product-badge">PASTELES</span>
+                        <img src="https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&fit=crop&w=700&q=80" 
+                             alt="Queque casero tradicional esponjoso" 
+                             class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Queques Tradicionales</h3>
+                        <p class="product-desc">Suaves y deliciosos queques caseros, perfectos para compartir con café o té en familia.</p>
+                        <div class="product-footer">
+                            <div class="product-price-box">
+                                <span class="product-price-label">Precio</span>
+                                <span class="product-price">Bs. --</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary btn-sm btn-open-order-modal" 
+                                        data-product="Queques Tradicionales" 
+                                        data-price="Bs. --">
+                                    Pedir
+                                </button>
+                                <button class="btn btn-whatsapp-outline btn-sm btn-inquire-whatsapp" 
+                                        data-product="Queques Tradicionales">
+                                    Consultar por WhatsApp
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 5. Brazo Gitano (Producto Original Conservado) -->
+                <article class="product-card" data-category="pasteles">
+                    <div class="product-img-container">
+                        <span class="product-badge">PASTELES</span>
+                        <img src="https://images.unsplash.com/photo-1624353365286-3f8d62daad51?auto=format&fit=crop&w=700&q=80" 
+                             alt="Brazo gitano relleno de dulce de leche o crema" 
+                             class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Brazo gitano</h3>
+                        <p class="product-desc">Fino arrollado relleno de dulce de leche o crema, espolvoreado con azúcar glas.</p>
+                        <div class="product-footer">
+                            <div class="product-price-box">
+                                <span class="product-price-label">Precio</span>
+                                <span class="product-price">Bs. --</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary btn-sm btn-open-order-modal" 
+                                        data-product="Brazo gitano" 
+                                        data-price="Bs. --">
+                                    Pedir
+                                </button>
+                                <button class="btn btn-whatsapp-outline btn-sm btn-inquire-whatsapp" 
+                                        data-product="Brazo gitano">
+                                    Consultar por WhatsApp
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 6. Pasta Frola (Producto Original Conservado) -->
+                <article class="product-card" data-category="pasteles">
+                    <div class="product-img-container">
+                        <span class="product-badge">PASTELES</span>
+                        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=700&q=80" 
+                             alt="Pasta frola dulce tradicional" 
+                             class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Pasta frola</h3>
+                        <p class="product-desc">Masa suave y crocante con enrejado clásico, rellena de dulce tradicional artesanal.</p>
+                        <div class="product-footer">
+                            <div class="product-price-box">
+                                <span class="product-price-label">Precio</span>
+                                <span class="product-price">Bs. --</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary btn-sm btn-open-order-modal" 
+                                        data-product="Pasta frola" 
+                                        data-price="Bs. --">
+                                    Pedir
+                                </button>
+                                <button class="btn btn-whatsapp-outline btn-sm btn-inquire-whatsapp" 
+                                        data-product="Pasta frola">
+                                    Consultar por WhatsApp
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 7. Cupcakes de Vainilla & Crema -->
+                <article class="product-card" data-category="cupcakes">
+                    <div class="product-img-container">
+                        <span class="product-badge">CUPCAKES</span>
+                        <img src="https://images.unsplash.com/photo-1587668178277-295251f900ce?auto=format&fit=crop&w=700&q=80" 
+                             alt="Cupcakes de vainilla decorados con crema rosada" 
+                             class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Cupcakes de Vainilla</h3>
+                        <p class="product-desc">Minitortas esponjosas con delicada crema buttercream en tonos pastel y detalles comestibles.</p>
+                        <div class="product-footer">
+                            <div class="product-price-box">
+                                <span class="product-price-label">Precio</span>
+                                <span class="product-price">Bs. --</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary btn-sm btn-open-order-modal" 
+                                        data-product="Cupcakes de Vainilla" 
+                                        data-price="Bs. --">
+                                    Pedir
+                                </button>
+                                <button class="btn btn-whatsapp-outline btn-sm btn-inquire-whatsapp" 
+                                        data-product="Cupcakes de Vainilla">
+                                    Consultar por WhatsApp
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 8. Cupcakes de Chocolate Gourmet -->
+                <article class="product-card" data-category="cupcakes">
+                    <div class="product-img-container">
+                        <span class="product-badge">CUPCAKES</span>
+                        <img src="https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?auto=format&fit=crop&w=700&q=80" 
+                             alt="Cupcakes de chocolate con frosting intenso" 
+                             class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Cupcakes de Chocolate</h3>
+                        <p class="product-desc">Intenso sabor a chocolate belga con cobertura cremosa y virutas para amantes del cacao.</p>
+                        <div class="product-footer">
+                            <div class="product-price-box">
+                                <span class="product-price-label">Precio</span>
+                                <span class="product-price">Bs. --</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary btn-sm btn-open-order-modal" 
+                                        data-product="Cupcakes de Chocolate" 
+                                        data-price="Bs. --">
+                                    Pedir
+                                </button>
+                                <button class="btn btn-whatsapp-outline btn-sm btn-inquire-whatsapp" 
+                                        data-product="Cupcakes de Chocolate">
+                                    Consultar por WhatsApp
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 9. Alfajores (Producto Original Conservado) -->
+                <article class="product-card" data-category="galletas">
+                    <div class="product-img-container">
+                        <span class="product-badge">GALLETAS</span>
+                        <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=700&q=80" 
+                             alt="Alfajores de maicena con abundante dulce de leche y coco" 
+                             class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Alfajores Artesanales</h3>
+                        <p class="product-desc">Suaves tapitas que se deshacen en la boca, rellenas de abundante dulce de leche y coco rallado.</p>
+                        <div class="product-footer">
+                            <div class="product-price-box">
+                                <span class="product-price-label">Precio</span>
+                                <span class="product-price">Bs. --</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary btn-sm btn-open-order-modal" 
+                                        data-product="Alfajores Artesanales" 
+                                        data-price="Bs. --">
+                                    Pedir
+                                </button>
+                                <button class="btn btn-whatsapp-outline btn-sm btn-inquire-whatsapp" 
+                                        data-product="Alfajores Artesanales">
+                                    Consultar por WhatsApp
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 10. Galletas (Producto Original Conservado) -->
+                <article class="product-card" data-category="galletas">
+                    <div class="product-img-container">
+                        <span class="product-badge">GALLETAS</span>
+                        <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=700&q=80" 
+                             alt="Galletas artesanales con chispas de chocolate horneadas con dedicación" 
+                             class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Galletas con Chispas</h3>
+                        <p class="product-desc">Galletas crocantes por fuera y suaves por dentro, preparadas con mantequilla e ingredientes selectos.</p>
+                        <div class="product-footer">
+                            <div class="product-price-box">
+                                <span class="product-price-label">Precio</span>
+                                <span class="product-price">Bs. --</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary btn-sm btn-open-order-modal" 
+                                        data-product="Galletas con Chispas" 
+                                        data-price="Bs. --">
+                                    Pedir
+                                </button>
+                                <button class="btn btn-whatsapp-outline btn-sm btn-inquire-whatsapp" 
+                                        data-product="Galletas con Chispas">
+                                    Consultar por WhatsApp
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 11. Postres: Cheesecake de Frutos Rojos -->
+                <article class="product-card" data-category="postres">
+                    <div class="product-img-container">
+                        <span class="product-badge">POSTRES</span>
+                        <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=700&q=80" 
+                             alt="Cheesecake cremoso con coulis de frutos rojos" 
+                             class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Cheesecake de Frutos Rojos</h3>
+                        <p class="product-desc">Base crujiente de galleta con crema de queso suave y cobertura artesanal de frutos del bosque.</p>
+                        <div class="product-footer">
+                            <div class="product-price-box">
+                                <span class="product-price-label">Precio</span>
+                                <span class="product-price">Bs. --</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary btn-sm btn-open-order-modal" 
+                                        data-product="Cheesecake de Frutos Rojos" 
+                                        data-price="Bs. --">
+                                    Pedir
+                                </button>
+                                <button class="btn btn-whatsapp-outline btn-sm btn-inquire-whatsapp" 
+                                        data-product="Cheesecake de Frutos Rojos">
+                                    Consultar por WhatsApp
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 12. Pedidos Personalizados: Tortas Temáticas -->
+                <article class="product-card" data-category="personalizados">
+                    <div class="product-img-container">
+                        <span class="product-badge">PERSONALIZADOS</span>
+                        <img src="https://images.unsplash.com/photo-1535141192574-5d4897c13136?auto=format&fit=crop&w=700&q=80" 
+                             alt="Torta temática personalizada para cumpleaños y bodas" 
+                             class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Tortas Personalizadas</h3>
+                        <p class="product-desc">Diseñamos la torta de tus sueños para cumpleaños, aniversarios, bautizos y cualquier fecha especial.</p>
+                        <div class="product-footer">
+                            <div class="product-price-box">
+                                <span class="product-price-label">Precio</span>
+                                <span class="product-price">A cotizar</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary btn-sm btn-open-order-modal" 
+                                        data-product="Torta Personalizada a Medida" 
+                                        data-price="A cotizar">
+                                    Pedir
+                                </button>
+                                <button class="btn btn-whatsapp-outline btn-sm btn-inquire-whatsapp" 
+                                        data-product="Torta Personalizada a Medida">
+                                    Consultar por WhatsApp
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 13. Empanadas (Producto Salado Original Conservado) -->
+                <article class="product-card" data-category="salados">
+                    <div class="product-img-container">
+                        <span class="product-badge">SALADOS</span>
+                        <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=700&q=80" 
+                             alt="Empanadas doradas con sabor casero" 
+                             class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Empanadas Caseras</h3>
+                        <p class="product-desc">Empanadas doradas al horno con relleno jugoso y sazón tradicional de la casa.</p>
+                        <div class="product-footer">
+                            <div class="product-price-box">
+                                <span class="product-price-label">Precio</span>
+                                <span class="product-price">Bs. --</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary btn-sm btn-open-order-modal" 
+                                        data-product="Empanadas Caseras" 
+                                        data-price="Bs. --">
+                                    Pedir
+                                </button>
+                                <button class="btn btn-whatsapp-outline btn-sm btn-inquire-whatsapp" 
+                                        data-product="Empanadas Caseras">
+                                    Consultar por WhatsApp
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 14. Salteñas (Producto Salado Original Conservado) -->
+                <article class="product-card" data-category="salados">
+                    <div class="product-img-container">
+                        <span class="product-badge">SALADOS</span>
+                        <img src="https://images.unsplash.com/photo-1628191010210-a59de33e5941?auto=format&fit=crop&w=700&q=80" 
+                             alt="Salteñas tradicionales preparadas con receta típica" 
+                             class="product-img" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Salteñas Tradicionales</h3>
+                        <p class="product-desc">Preparadas con recetas típicas, masa crujiente y jugo con el toque exacto de condimento.</p>
+                        <div class="product-footer">
+                            <div class="product-price-box">
+                                <span class="product-price-label">Precio</span>
+                                <span class="product-price">Bs. --</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary btn-sm btn-open-order-modal" 
+                                        data-product="Salteñas Tradicionales" 
+                                        data-price="Bs. --">
+                                    Pedir
+                                </button>
+                                <button class="btn btn-whatsapp-outline btn-sm btn-inquire-whatsapp" 
+                                        data-product="Salteñas Tradicionales">
+                                    Consultar por WhatsApp
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SECCIÓN 7: SOBRE REPOSTERÍA MyG
+             ========================================== -->
+        <section class="section" id="nosotros">
+            <div class="about-grid">
+                <div class="about-visual">
+                    <div class="about-main-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=900&q=80" 
+                             alt="Preparación artesanal en Repostería MyG" 
+                             class="about-img" loading="lazy">
+                    </div>
+                    <div class="about-badge-experience">
+                        <strong>MyG</strong>
+                        <span>Pasión por la Repostería</span>
+                    </div>
+                </div>
+
+                <div class="about-content">
+                    <span class="section-subtitle">CONÓCENOS</span>
+                    <h3>Sobre Repostería MyG</h3>
+                    
+                    <p class="about-lead">
+                        Un sabor especial y auténtico en cada preparación, horneado con amor para la familia.
+                    </p>
+
+                    <p class="about-desc">
+                        En <strong>Repostería MyG</strong> nació con el sueño de llevar dulzura, alegría y calidad 
+                        a cada hogar. Nos dedicamos a la elaboración de tortas, pasteles, cupcakes, galletas y 
+                        postres seleccionando ingredientes frescos y cuidando cada detalle de presentación.
+                    </p>
+
+                    <p class="about-desc">
+                        Ya sea para una celebración familiar, un cumpleaños, un detalle especial o simplemente 
+                        para disfrutar de una merienda inolvidable en Pailón, estamos aquí para atenderte con 
+                        calidez y compromiso.
+                    </p>
+
+                    <div class="about-features">
+                        <div class="about-feature-item">
+                            <div class="about-feature-icon">✓</div>
+                            <div class="about-feature-text">
+                                <strong>Ingredientes de Calidad</strong>
+                                <p>Seleccionamos siempre productos frescos y puros.</p>
+                            </div>
+                        </div>
+                        <div class="about-feature-item">
+                            <div class="about-feature-icon">✓</div>
+                            <div class="about-feature-text">
+                                <strong>Sabor Casero Genuino</strong>
+                                <p>Recetas tradicionales con textura esponjosa.</p>
+                            </div>
+                        </div>
+                        <div class="about-feature-item">
+                            <div class="about-feature-icon">✓</div>
+                            <div class="about-feature-text">
+                                <strong>Atención Dedicada</strong>
+                                <p>Te asesoramos personalmente para tu evento.</p>
+                            </div>
+                        </div>
+                        <div class="about-feature-item">
+                            <div class="about-feature-icon">✓</div>
+                            <div class="about-feature-text">
+                                <strong>Diseños Personalizados</strong>
+                                <p>Adaptamos los colores y temas que más te gusten.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-cta-row">
+                        <a href="https://wa.me/59169120470?text=%C2%A1Hola!%20Me%20interesa%20conocer%20los%20productos%20de%20Reposter%C3%ADa%20MyG.%20%C2%BFPodr%C3%ADan%20enviarme%20informaci%C3%B3n%20sobre%20sus%20tortas%2C%20postres%20y%20precios%3F" 
+                           class="btn btn-whatsapp" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           id="aboutWhatsappBtn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.78 14.16c-.24.68-1.39 1.3-1.92 1.38-.49.07-1.12.1-3.23-.77-2.7-1.12-4.44-3.86-4.57-4.04-.13-.18-1.09-1.45-1.09-2.77 0-1.32.69-1.96.93-2.23.25-.26.54-.33.72-.33.18 0 .36 0 .52.01.17.01.39-.06.61.47.24.57.81 1.98.88 2.13.07.14.12.31.02.5-.09.2-.14.31-.29.47-.14.16-.31.36-.44.49-.14.14-.29.3-.12.59.16.29.73 1.2 1.57 1.95 1.08.96 1.99 1.26 2.27 1.4.29.14.45.12.62-.07.17-.2.72-.84.91-1.13.2-.29.39-.24.66-.14.27.1 1.72.81 2.02.96.29.14.49.22.56.34.07.12.07.72-.17 1.4z"/>
+                            </svg>
+                            Conversar por WhatsApp
+                        </a>
+
+                        <a href="https://maps.app.goo.gl/cA5d8KJsehcWfmA77" 
+                           class="btn btn-secondary" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           id="aboutMapBtn">
+                            📍 Ver ubicación en Pailón
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SECCIÓN 6: GALERÍA DE FOTOGRAFÍAS
+             ========================================== -->
+        <section class="section section-alt" id="galeria">
+            <div class="section-header">
+                <span class="section-subtitle">NUESTRAS CREACIONES</span>
+                <h2 class="section-title">Galería de Dulzuras</h2>
+                <p class="section-desc">
+                    Descubre una muestra visual de nuestros pasteles decorados, tortas para fiestas, 
+                    detalles finos y presentaciones que han endulzado momentos inolvidables.
+                </p>
+            </div>
+
+            <!-- Grilla Adaptable de Fotografías -->
+            <div class="gallery-grid" id="galleryGrid">
+                
+                <div class="gallery-item span-2" data-title="Torta de Fiesta Elegante" data-category-name="Decoración Floral & Frutas">
+                    <img src="https://images.unsplash.com/photo-1535141192574-5d4897c13136?auto=format&fit=crop&w=900&q=80" 
+                         alt="Torta decorada con flores y glaseado suave" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Torta de Fiesta Elegante</h4>
+                        <p>Decoración para Ocasiones Especiales</p>
+                    </div>
+                    <div class="gallery-zoom-icon" aria-hidden="true">🔍</div>
+                </div>
+
+                <div class="gallery-item" data-title="Cupcakes Gourmet Temáticos" data-category-name="Mesa Dulce">
+                    <img src="https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?auto=format&fit=crop&w=800&q=80" 
+                         alt="Variedad de cupcakes decorados en tonos pastel" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Cupcakes Gourmet</h4>
+                        <p>Mesa Dulce & Eventos</p>
+                    </div>
+                    <div class="gallery-zoom-icon" aria-hidden="true">🔍</div>
+                </div>
+
+                <div class="gallery-item" data-title="Torta Choco-Berries" data-category-name="Chocolate & Frutos Rojos">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80" 
+                         alt="Torta de chocolate decorada con bayas y goteo" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Torta Choco-Berries</h4>
+                        <p>Chocolate & Frutas Frescas</p>
+                    </div>
+                    <div class="gallery-zoom-icon" aria-hidden="true">🔍</div>
+                </div>
+
+                <div class="gallery-item" data-title="Porción Tres Leches" data-category-name="Postres Clásicos">
+                    <img src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?auto=format&fit=crop&w=800&q=80" 
+                         alt="Corte de torta húmeda con canela y crema" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Porción Tres Leches</h4>
+                        <p>Textura Húmeda Tradicional</p>
+                    </div>
+                    <div class="gallery-zoom-icon" aria-hidden="true">🔍</div>
+                </div>
+
+                <div class="gallery-item" data-title="Tartas Frutales Brillantes" data-category-name="Pastelería Fina">
+                    <img src="https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&q=80" 
+                         alt="Tarta de frutas frescas con brillo artesanal" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h4>Tartas Frutales</h4>
+                        <p>Frescura y Brillo Artesanal</p>
+                    </div>
+                    <div class="gallery-zoom-icon" aria-hidden="true">🔍</div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SECCIÓN 3: BANNER DESTACADO DE TIKTOK
+             ========================================== -->
+        <section class="section" style="padding-top: 40px; padding-bottom: 40px;">
+            <div class="tiktok-banner">
+                <div>
+                    <span class="tiktok-banner-tag">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.35 0 .68.06.98.17V8.97a6.29 6.29 0 0 0-.98-.08A6.34 6.34 0 0 0 3 15.23a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V9.08a8.16 8.16 0 0 0 4.91 1.63v-3.52c-.34 0-.68-.17-1-.5z"/>
+                        </svg>
+                        Comunidad en TikTok
+                    </span>
+                    <h2 class="tiktok-banner-title">¡Descubre el proceso detrás de cada delicia!</h2>
+                    <p class="tiktok-banner-desc">
+                        En nuestro TikTok compartimos videos de decoración de tortas, recetas, consejos, 
+                        los pedidos que preparamos a diario y sorpresas especiales. ¡No te lo pierdas!
+                    </p>
+                    <div class="tiktok-banner-actions">
+                        <a href="https://www.tiktok.com/@awm283" 
+                           class="btn btn-tiktok tiktok-link" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           id="bannerTiktokFollowBtn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.35 0 .68.06.98.17V8.97a6.29 6.29 0 0 0-.98-.08A6.34 6.34 0 0 0 3 15.23a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V9.08a8.16 8.16 0 0 0 4.91 1.63v-3.52c-.34 0-.68-.17-1-.5z"/>
+                            </svg>
+                            Síguenos en TikTok
+                        </a>
+                        <a href="https://wa.me/59169120470?text=%C2%A1Hola!%20Me%20interesa%20conocer%20los%20productos%20de%20Reposter%C3%ADa%20MyG.%20%C2%BFPodr%C3%ADan%20enviarme%20informaci%C3%B3n%20sobre%20sus%20tortas%2C%20postres%20y%20precios%3F" 
+                           class="btn btn-whatsapp" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           id="bannerTiktokWhatsappBtn">
+                            Pedir por WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <div class="tiktok-preview-card">
+                    <div style="font-size: 2.5rem;">📱</div>
+                    <span class="tiktok-handle">@awm283</span>
+                    <p class="tiktok-stats">Repostería MyG en TikTok</p>
+                    <a href="https://www.tiktok.com/@awm283" 
+                       class="btn btn-sm btn-tiktok tiktok-link" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       style="margin-top: 8px;">
+                        Ver Perfil Oficial
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SECCIÓN 4 Y CONTACTO: CONTACTO Y UBICACIÓN
+             ========================================== -->
+        <section class="section" id="contacto">
+            <div class="section-header">
+                <span class="section-subtitle">ESTAMOS PARA ATENDERTE</span>
+                <h2 class="section-title">Contáctanos</h2>
+                <p class="section-desc">
+                    ¿Tienes una consulta, deseas cotizar una torta especial o coordinar tu pedido? 
+                    Escríbenos directamente o visítanos en Pailón.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Información de Contacto Directo -->
+                <div class="contact-info-panel">
+                    
+                    <!-- Tarjeta WhatsApp -->
+                    <div class="contact-card highlight-whatsapp">
+                        <div class="contact-icon" aria-hidden="true">
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.78 14.16c-.24.68-1.39 1.3-1.92 1.38-.49.07-1.12.1-3.23-.77-2.7-1.12-4.44-3.86-4.57-4.04-.13-.18-1.09-1.45-1.09-2.77 0-1.32.69-1.96.93-2.23.25-.26.54-.33.72-.33.18 0 .36 0 .52.01.17.01.39-.06.61.47.24.57.81 1.98.88 2.13.07.14.12.31.02.5-.09.2-.14.31-.29.47-.14.16-.31.36-.44.49-.14.14-.29.3-.12.59.16.29.73 1.2 1.57 1.95 1.08.96 1.99 1.26 2.27 1.4.29.14.45.12.62-.07.17-.2.72-.84.91-1.13.2-.29.39-.24.66-.14.27.1 1.72.81 2.02.96.29.14.49.22.56.34.07.12.07.72-.17 1.4z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>WhatsApp Oficial</h4>
+                            <p>Atención directa y rápida: <strong>+591 69120470</strong></p>
+                            <a href="https://wa.me/59169120470?text=%C2%A1Hola!%20Me%20interesa%20conocer%20los%20productos%20de%20Reposter%C3%ADa%20MyG.%20%C2%BFPodr%C3%ADan%20enviarme%20informaci%C3%B3n%20sobre%20sus%20tortas%2C%20postres%20y%20precios%3F" 
+                               class="action-link" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               id="contactCardWhatsappLink">
+                                Enviar mensaje por WhatsApp →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta TikTok -->
+                    <div class="contact-card highlight-tiktok">
+                        <div class="contact-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.35 0 .68.06.98.17V8.97a6.29 6.29 0 0 0-.98-.08A6.34 6.34 0 0 0 3 15.23a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V9.08a8.16 8.16 0 0 0 4.91 1.63v-3.52c-.34 0-.68-.17-1-.5z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>TikTok Oficial</h4>
+                            <p>Síguenos en nuestra cuenta: <strong>@awm283</strong></p>
+                            <a href="https://www.tiktok.com/@awm283" 
+                               class="action-link tiktok-link" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               id="contactCardTiktokLink">
+                                Ver videos y perfil en TikTok →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta Ubicación en Google Maps -->
+                    <div class="contact-card">
+                        <div class="contact-icon" aria-hidden="true">📍</div>
+                        <div class="contact-details">
+                            <h4>Nuestra Ubicación</h4>
+                            <p>Pailón, Barrio María Belén, Santa Cruz, Bolivia</p>
+                            <a href="https://maps.app.goo.gl/cA5d8KJsehcWfmA77" 
+                               class="action-link" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               id="contactCardMapsLink">
+                                Abrir en Google Maps →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta Horarios -->
+                    <div class="contact-card">
+                        <div class="contact-icon" aria-hidden="true">⏰</div>
+                        <div class="contact-details">
+                            <h4>Horarios de Atención</h4>
+                            <p>Lunes a Domingo: Pedidos y consultas abiertas todo el día por WhatsApp.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Formulario de Contacto Funcional -->
+                <div class="contact-form-wrap">
+                    <div class="form-header">
+                        <h3>Envíanos un Mensaje</h3>
+                        <p>Completa tus datos para cotizaciones o consultas y te responderemos inmediatamente.</p>
+                    </div>
+
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="contactName" class="form-label">Tu Nombre Completo *</label>
+                            <input type="text" id="contactName" class="form-control" placeholder="Ej: María Gonzales" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactPhone" class="form-label">Tu Teléfono o WhatsApp *</label>
+                            <input type="tel" id="contactPhone" class="form-control" placeholder="Ej: 69120470" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactMessage" class="form-label">¿En qué te podemos ayudar? *</label>
+                            <textarea id="contactMessage" class="form-control" rows="4" placeholder="Cuéntanos qué producto te interesa, fecha de tu evento o cualquier detalle..." required></textarea>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary" id="btnSubmitContact">
+                                Enviar mensaje
+                            </button>
+                            <a href="https://wa.me/59169120470?text=%C2%A1Hola!%20Me%20interesa%20conocer%20los%20productos%20de%20Reposter%C3%ADa%20MyG.%20%C2%BFPodr%C3%ADan%20enviarme%20informaci%C3%B3n%20sobre%20sus%20tortas%2C%20postres%20y%20precios%3F" 
+                               class="btn btn-whatsapp-outline" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               id="btnDirectWaContact">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.78 14.16c-.24.68-1.39 1.3-1.92 1.38-.49.07-1.12.1-3.23-.77-2.7-1.12-4.44-3.86-4.57-4.04-.13-.18-1.09-1.45-1.09-2.77 0-1.32.69-1.96.93-2.23.25-.26.54-.33.72-.33.18 0 .36 0 .52.01.17.01.39-.06.61.47.24.57.81 1.98.88 2.13.07.14.12.31.02.5-.09.2-.14.31-.29.47-.14.16-.31.36-.44.49-.14.14-.29.3-.12.59.16.29.73 1.2 1.57 1.95 1.08.96 1.99 1.26 2.27 1.4.29.14.45.12.62-.07.17-.2.72-.84.91-1.13.2-.29.39-.24.66-.14.27.1 1.72.81 2.02.96.29.14.49.22.56.34.07.12.07.72-.17 1.4z"/>
+                                </svg>
+                                O escribe directamente a WhatsApp
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==========================================
+         SECCIÓN 9: PIE DE PÁGINA (FOOTER)
+         ========================================== -->
+    <footer>
+        <div class="footer-top">
+            <!-- Columna Marca -->
+            <div class="footer-brand">
+                <a href="#inicio" class="logo">
+                    <span class="logo-brand">Repostería <span>MyG</span></span>
+                </a>
+                <p>
+                    Dedicados con amor a la elaboración de tortas, pasteles, postres, cupcakes y delicias 
+                    para acompañar tus mejores momentos.
+                </p>
+                <div class="footer-social-links">
+                    <a href="https://www.tiktok.com/@awm283" 
+                       class="footer-social-btn tiktok-link" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       aria-label="TikTok @awm283"
+                       title="TikTok @awm283">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.35 0 .68.06.98.17V8.97a6.29 6.29 0 0 0-.98-.08A6.34 6.34 0 0 0 3 15.23a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V9.08a8.16 8.16 0 0 0 4.91 1.63v-3.52c-.34 0-.68-.17-1-.5z"/>
+                        </svg>
+                    </a>
+                    <a href="https://wa.me/59169120470?text=%C2%A1Hola!%20Me%20interesa%20conocer%20los%20productos%20de%20Reposter%C3%ADa%20MyG.%20%C2%BFPodr%C3%ADan%20enviarme%20informaci%C3%B3n%20sobre%20sus%20tortas%2C%20postres%20y%20precios%3F" 
+                       class="footer-social-btn" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       aria-label="WhatsApp 59169120470"
+                       title="WhatsApp 59169120470">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.78 14.16c-.24.68-1.39 1.3-1.92 1.38-.49.07-1.12.1-3.23-.77-2.7-1.12-4.44-3.86-4.57-4.04-.13-.18-1.09-1.45-1.09-2.77 0-1.32.69-1.96.93-2.23.25-.26.54-.33.72-.33.18 0 .36 0 .52.01.17.01.39-.06.61.47.24.57.81 1.98.88 2.13.07.14.12.31.02.5-.09.2-.14.31-.29.47-.14.16-.31.36-.44.49-.14.14-.29.3-.12.59.16.29.73 1.2 1.57 1.95 1.08.96 1.99 1.26 2.27 1.4.29.14.45.12.62-.07.17-.2.72-.84.91-1.13.2-.29.39-.24.66-.14.27.1 1.72.81 2.02.96.29.14.49.22.56.34.07.12.07.72-.17 1.4z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Columna Enlaces Rápidos -->
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <ul class="footer-nav">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#nosotros">Sobre nosotros</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna Categorías -->
+            <div class="footer-col">
+                <h4>Productos</h4>
+                <ul class="footer-nav">
+                    <li><a href="#productos">Tortas de Cumpleaños</a></li>
+                    <li><a href="#productos">Pasteles & Queques</a></li>
+                    <li><a href="#productos">Cupcakes Decorados</a></li>
+                    <li><a href="#productos">Galletas & Alfajores</a></li>
+                    <li><a href="#productos">Pedidos Personalizados</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna Ubicación y Contacto -->
+            <div class="footer-col">
+                <h4>Contacto Directo</h4>
+                <div class="footer-contact-info">
+                    <div class="footer-contact-item">
+                        <span>📱</span>
+                        <span>WhatsApp: +591 69120470</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span>📍</span>
+                        <span>Pailón, Barrio María Belén, Bolivia</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span>🎵</span>
+                        <span>TikTok: @awm283</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Repostería MyG. Todos los derechos reservados.</p>
+            <p>Hecho con amor y pasión por la repostería artesanal.</p>
+        </div>
+    </footer>
+
+    <!-- ==========================================
+         BOTÓN FLOTANTE DE WHATSAPP (ACCESO RÁPIDO)
+         ========================================== -->
+    <a href="https://wa.me/59169120470?text=%C2%A1Hola!%20Me%20interesa%20conocer%20los%20productos%20de%20Reposter%C3%ADa%20MyG.%20%C2%BFPodr%C3%ADan%20enviarme%20informaci%C3%B3n%20sobre%20sus%20tortas%2C%20postres%20y%20precios%3F" 
+       class="floating-whatsapp" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       aria-label="Pedir por WhatsApp"
+       id="floatingWhatsappBtn">
+        <span class="floating-whatsapp-tooltip">¿Tienes un antojo o evento? ¡Escríbenos!</span>
+        <div class="floating-whatsapp-btn">
+            <svg viewBox="0 0 24 24">
+                <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.78 14.16c-.24.68-1.39 1.3-1.92 1.38-.49.07-1.12.1-3.23-.77-2.7-1.12-4.44-3.86-4.57-4.04-.13-.18-1.09-1.45-1.09-2.77 0-1.32.69-1.96.93-2.23.25-.26.54-.33.72-.33.18 0 .36 0 .52.01.17.01.39-.06.61.47.24.57.81 1.98.88 2.13.07.14.12.31.02.5-.09.2-.14.31-.29.47-.14.16-.31.36-.44.49-.14.14-.29.3-.12.59.16.29.73 1.2 1.57 1.95 1.08.96 1.99 1.26 2.27 1.4.29.14.45.12.62-.07.17-.2.72-.84.91-1.13.2-.29.39-.24.66-.14.27.1 1.72.81 2.02.96.29.14.49.22.56.34.07.12.07.72-.17 1.4z"/>
+            </svg>
+        </div>
+    </a>
+
+    <!-- ==========================================
+         MODAL DE REALIZACIÓN DE PEDIDO
+         ========================================== -->
+    <div class="modal" id="orderModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-box">
+            <button class="modal-close-btn" id="closeOrderModal" aria-label="Cerrar ventana">×</button>
+            
+            <div class="modal-header">
+                <h3 id="modalTitle">Realizar Pedido</h3>
+                <p>Completa los detalles y te conectaremos con WhatsApp para confirmar tu orden.</p>
+            </div>
+
+            <div class="modal-selected-product">
+                <div class="modal-product-icon">🍰</div>
+                <div>
+                    <strong id="selectedProductName">Producto</strong>
+                    <span id="selectedProductPrice">Bs. --</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="orderName" class="form-label">Tu Nombre *</label>
+                <input type="text" id="orderName" class="form-control" placeholder="¿A nombre de quién registramos el pedido?" required>
+            </div>
+
+            <div class="form-group">
+                <label for="orderQuantity" class="form-label">Cantidad *</label>
+                <div style="display: flex; gap: 8px; align-items: center;">
+                    <button type="button" class="btn btn-secondary btn-sm" id="qtyMinus" style="min-height: 44px; width: 44px; padding: 0;">-</button>
+                    <input type="number" id="orderQuantity" class="form-control" value="1" min="1" style="text-align: center;">
+                    <button type="button" class="btn btn-secondary btn-sm" id="qtyPlus" style="min-height: 44px; width: 44px; padding: 0;">+</button>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="orderDate" class="form-label">Fecha deseada / Ocasión</label>
+                <input type="text" id="orderDate" class="form-control" placeholder="Ej: Este sábado para cumpleaños">
+            </div>
+
+            <div class="form-group">
+                <label for="orderDetails" class="form-label">Detalles o decoración adicional</label>
+                <textarea id="orderDetails" class="form-control" rows="2" placeholder="Sabor especial, dedicatoria o instrucciones..."></textarea>
+            </div>
+
+            <button type="button" class="btn btn-whatsapp" id="confirmOrderBtn" style="width: 100%; margin-top: 10px;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.78 14.16c-.24.68-1.39 1.3-1.92 1.38-.49.07-1.12.1-3.23-.77-2.7-1.12-4.44-3.86-4.57-4.04-.13-.18-1.09-1.45-1.09-2.77 0-1.32.69-1.96.93-2.23.25-.26.54-.33.72-.33.18 0 .36 0 .52.01.17.01.39-.06.61.47.24.57.81 1.98.88 2.13.07.14.12.31.02.5-.09.2-.14.31-.29.47-.14.16-.31.36-.44.49-.14.14-.29.3-.12.59.16.29.73 1.2 1.57 1.95 1.08.96 1.99 1.26 2.27 1.4.29.14.45.12.62-.07.17-.2.72-.84.91-1.13.2-.29.39-.24.66-.14.27.1 1.72.81 2.02.96.29.14.49.22.56.34.07.12.07.72-.17 1.4z"/>
+                </svg>
+                Confirmar y Enviar a WhatsApp
+            </button>
+        </div>
+    </div>
+
+    <!-- ==========================================
+         MODAL LIGHTBOX PARA LA GALERÍA
+         ========================================== -->
+    <div class="modal lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true">
+        <div class="modal-box lightbox-content">
+            <button class="modal-close-btn" id="closeLightbox" aria-label="Cerrar imagen">×</button>
+            <img src="" alt="" id="lightboxImg" class="lightbox-img">
+            <h3 id="lightboxCaption" class="lightbox-caption">Título</h3>
+            <p id="lightboxSub" class="lightbox-sub">Categoría</p>
+            <a href="#" id="lightboxWhatsappBtn" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener noreferrer">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.78 14.16c-.24.68-1.39 1.3-1.92 1.38-.49.07-1.12.1-3.23-.77-2.7-1.12-4.44-3.86-4.57-4.04-.13-.18-1.09-1.45-1.09-2.77 0-1.32.69-1.96.93-2.23.25-.26.54-.33.72-.33.18 0 .36 0 .52.01.17.01.39-.06.61.47.24.57.81 1.98.88 2.13.07.14.12.31.02.5-.09.2-.14.31-.29.47-.14.16-.31.36-.44.49-.14.14-.29.3-.12.59.16.29.73 1.2 1.57 1.95 1.08.96 1.99 1.26 2.27 1.4.29.14.45.12.62-.07.17-.2.72-.84.91-1.13.2-.29.39-.24.66-.14.27.1 1.72.81 2.02.96.29.14.49.22.56.34.07.12.07.72-.17 1.4z"/>
+                </svg>
+                Consultar diseño similar por WhatsApp
+            </a>
+        </div>
+    </div>
+
+    <!-- Script JavaScript modular externo -->
+    <script src="script.js" defer></script>
+</body>
+</html>
